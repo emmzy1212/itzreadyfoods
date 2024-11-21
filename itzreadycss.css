@@ -1,0 +1,111 @@
+/* Header General Styles */
+.main-header {
+    background-color: #212529;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.header-top {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header-top .info li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.header-top .social-links li a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.header-top .social-links li a:hover {
+    color: #f39c12;
+}
+
+.btn-box .btn-reserve {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-box .btn-reserve:hover {
+    background-color: #e67e22;
+}
+
+.header-lower {
+    padding: 20px 0;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.menu-area .navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-area .navigation li {
+    list-style: none;
+}
+
+.menu-area .navigation li a {
+    color: #ffffff;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.menu-area .navigation li a:hover,
+.menu-area .navigation .current a {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+.nav-right .btn-box a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-right .btn-box a:hover {
+    color: #f39c12;
+}
+
+/* Sticky Header */
+.sticky-header {
+    background-color: #2c2f33;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-header .logo img {
+    max-height: 50px;
+}
+
+.mobile-nav-toggler {
+    display: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .menu-area .navigation {
+        display: none;
+    }
+
+    .mobile-nav-toggler {
+        display: block;
+    }
+}
