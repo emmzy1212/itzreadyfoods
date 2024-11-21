@@ -46,7 +46,7 @@ function promptForBeverage() {
 // Function to show a confirmation of the order
 function displayOrderConfirmation(quantity, beverage) {
     const confirmationMessage = `You have successfully ordered ${quantity} ${beverage}(s).`;
-    
+
     // Ask user if they want to proceed with the order
     const proceed = confirm(`${confirmationMessage}\nDo you want to proceed with payment?`);
 
@@ -87,3 +87,4 @@ function redirectToConfirmationPage(quantity, beverage) {
     // Redirect the user to WhatsApp
     window.location.href = whatsappUrl;
 }
+
